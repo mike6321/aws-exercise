@@ -1,7 +1,6 @@
 package me.choi.aws.domain;
 
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 import me.choi.aws.domain.item.Item;
 
 import javax.persistence.*;
@@ -9,6 +8,9 @@ import javax.persistence.*;
 import static javax.persistence.FetchType.LAZY;
 
 @Entity
+@Builder
+@AllArgsConstructor
+@NoArgsConstructor
 @Getter @Setter
 public class OrderItem {
 
@@ -27,5 +29,24 @@ public class OrderItem {
     private int orderPrice;
 
     private int count;
+
+    public void cancel() {
+        this.getItem().addStock(this.count);
+    }
+
+    public int getTotalPrice() {
+        return this.orderPrice * this.count;
+    }
+
+    public static OrderItem createOrderItem(Item item, int orderPrice, int count) {
+        OrderItemBuilder builder = OrderItem.builder()
+                                            .item(item)
+                                            .orderPrice(orderPrice)
+                                            .count(count);
+
+        builder.item.removeStock(count);
+
+        return builder.build();
+    }
 
 }
