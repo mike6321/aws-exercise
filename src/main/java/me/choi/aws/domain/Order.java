@@ -52,13 +52,16 @@ public class Order {
     }
 
     public static Order createOrder(Member member, Delivery delivery, List<OrderItem> orderItems) {
-        return Order.builder()
-                    .member(member)
-                    .delivery(delivery)
-                    .orderItems(orderItems)
-                    .orderStatus(OrderStatus.ORDER)
-                    .orderDate(LocalDateTime.now())
-                    .build();
+
+        Order order = new Order();
+        order.setMember(member);
+        order.setDelivery(delivery);
+        for (OrderItem orderItem : orderItems) {
+            order.addOrderItem(orderItem);
+        }
+        order.setOrderStatus(OrderStatus.ORDER);
+        order.setOrderDate(LocalDateTime.now());
+        return order;
     }
 
     public void cancel() {

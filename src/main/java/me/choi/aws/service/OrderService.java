@@ -9,6 +9,7 @@ import me.choi.aws.domain.item.Item;
 import me.choi.aws.repository.ItemRepository;
 import me.choi.aws.repository.MemberRepository;
 import me.choi.aws.repository.OrderRepository;
+import me.choi.aws.repository.OrderSearch;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -53,6 +54,9 @@ public class OrderService {
         order.cancel();
     }
 
-    // TODO: 2022/04/29 검색 
+    // TODO: 2022/04/29 검색
+    public List<Order> findOrders(OrderSearch orderSearch) {
+        return orderRepository.findAllByString(orderSearch);
+    }
 
 }
