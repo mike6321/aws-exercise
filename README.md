@@ -10,3 +10,4 @@
 * [EC2 배포](https://jwdeveloper.notion.site/EC2-10f120658b0647c884f9c51f99d3f5c6)
 * [ALB에 인스턴스 연결하여 웹서비스 실행](https://jwdeveloper.notion.site/ALB-ee5b138f76e14d4ea9776d9d7d043d47)
 * [ALB Rule 설정하여 인스턴스 분기하기](https://jwdeveloper.notion.site/ALB-Rule-f778f59a2ff746c1a633d3bb39e4285c)
+* [AWS-NUKE 사용법](https://jwdeveloper.notion.site/AWS-NUKE-9de6d896733f4b889f9e4068d784199f)
