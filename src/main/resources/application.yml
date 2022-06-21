@@ -1,13 +1,13 @@
 spring:
   datasource:
-    url: jdbc:mysql://jpa-shop-db.cwrv58p0ko6g.ap-northeast-2.rds.amazonaws.com:3306/jpa_shop
+    url: jdbc:mysql://database-1.cjapbtqrcjoe.ap-northeast-2.rds.amazonaws.com:3306/database_1
     username: admin
-    password: rownsdn91!
+    password: qwer1234
     driver-class-name: com.mysql.jdbc.Driver
 
   jpa:
     hibernate:
-#      ddl-auto: create-drop
+      ddl-auto: none
     properties:
       hibernate:
         show_sql: true
