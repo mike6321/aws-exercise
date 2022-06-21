@@ -14,3 +14,6 @@
 * [AWS Route53 과 DNS 의 동작원리](https://jwdeveloper.notion.site/AWS-Route53-DNS-3806daf635044120a8c2b9e46d14cf6b)
 * [AWS CloudFront 와 CDN의 동작원리](https://jwdeveloper.notion.site/AWS-CloudFront-CDN-ea79ef7c775b418580d5ae4083f6d585)
 * [어플리케이션 구동 (Nginx, Gunicorn, Supervisor)](https://jwdeveloper.notion.site/Nginx-Gunicorn-Supervisor-bbc5e16ebf5e40f1a135a007fd7cd590)
+* [AWS Docker Build](https://jwdeveloper.notion.site/AWS-Docker-Build-c9c0d836992f4a539d209dcaa6e8c08b)
+* [AWS Nginix Docker Build](https://jwdeveloper.notion.site/AWS-Nginix-Docker-Build-9f5d0f179236416687d53e27c0e46566)
+
