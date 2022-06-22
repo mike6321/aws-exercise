@@ -1,8 +1,6 @@
-# fastcampus-aws
+# AWS 인프라 구축 및 DevOps 실습
 
-한 번에 끝내는 AWS 인프라 구축과 DevOps 운영 초격차 패키지를 위한 repository 입니다.
-
-
+AWS 인프라 구축 및 DevOps 실습을 위한 repository 입니다.
 
 # Summary
 
@@ -16,4 +14,9 @@
 * [어플리케이션 구동 (Nginx, Gunicorn, Supervisor)](https://jwdeveloper.notion.site/Nginx-Gunicorn-Supervisor-bbc5e16ebf5e40f1a135a007fd7cd590)
 * [AWS Docker Build](https://jwdeveloper.notion.site/AWS-Docker-Build-c9c0d836992f4a539d209dcaa6e8c08b)
 * [AWS Nginix Docker Build](https://jwdeveloper.notion.site/AWS-Nginix-Docker-Build-9f5d0f179236416687d53e27c0e46566)
+* [AWS ECR에 컨테이너 업로드](https://jwdeveloper.notion.site/AWS-ECR-ba96589b0d3d4f2f8ad58fa353b07980)
 
+# Common
+
+* [빌드 느릴 때](https://jwdeveloper.notion.site/900528abeef445458fb2f267dcca8106)
+* [IAM 유저 생성](https://jwdeveloper.notion.site/IAM-da6cf40fad634d5a86e091e73deda538)
